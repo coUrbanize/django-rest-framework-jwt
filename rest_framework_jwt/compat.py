@@ -1,11 +1,11 @@
 from distutils.version import StrictVersion
 
-import rest_framework
-from rest_framework import serializers
+import rest_framework_3
+from rest_framework_3 import serializers
 from django.forms import widgets
 
 
-if StrictVersion(rest_framework.VERSION) < StrictVersion('3.0.0'):
+if StrictVersion(rest_framework_3.VERSION) < StrictVersion('3.0.0'):
     class Serializer(serializers.Serializer):
         pass
 

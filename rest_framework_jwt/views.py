@@ -1,6 +1,6 @@
-from rest_framework.views import APIView
-from rest_framework import status
-from rest_framework.response import Response
+from rest_framework_3.views import APIView
+from rest_framework_3 import status
+from rest_framework_3.response import Response
 
 from .settings import api_settings
 from .compat import get_request_data

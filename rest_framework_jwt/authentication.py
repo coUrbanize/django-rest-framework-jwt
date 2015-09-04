@@ -1,8 +1,8 @@
 import jwt
 from django.utils.encoding import smart_text
 from django.utils.translation import ugettext as _
-from rest_framework import exceptions
-from rest_framework.authentication import (
+from rest_framework_3 import exceptions
+from rest_framework_3.authentication import (
     BaseAuthentication, get_authorization_header
 )
 

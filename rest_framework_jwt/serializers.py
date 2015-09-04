@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 from django.contrib.auth import authenticate
 from django.utils.translation import ugettext as _
-from rest_framework import serializers
+from rest_framework_3 import serializers
 from .compat import Serializer
 
 from rest_framework_jwt.settings import api_settings

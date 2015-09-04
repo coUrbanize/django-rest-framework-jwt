@@ -1,5 +1,5 @@
-from rest_framework.test import APITestCase, APIClient
-from rest_framework import status
+from rest_framework_3.test import APITestCase, APIClient
+from rest_framework_3 import status
 from rest_framework_jwt.settings import api_settings
 
 
