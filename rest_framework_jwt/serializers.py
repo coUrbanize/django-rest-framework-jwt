@@ -43,8 +43,17 @@ class JSONWebTokenSerializer(Serializer):
         return get_username_field()
 
     def validate(self, attrs):
+        """
+        Updating validation to retrieve username
+        via email
+        """
+        email = attrs.get(self.username_field)
+
+        # get user (this is a little inefficient as User DB is being called twice)
+        user = User.objects.filter(email=email).first()
+
         credentials = {
-            self.username_field: attrs.get(self.username_field),
+            self.username_field: user.username,
             'password': attrs.get('password')
         }
 
