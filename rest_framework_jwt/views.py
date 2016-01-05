@@ -61,6 +61,9 @@ class JSONWebTokenAPIView(APIView):
             token = serializer.object.get('token')
             response_data = jwt_response_payload_handler(token, user, request)
 
+            # extend response to include user ID
+            response_data['user_id'] = user.id
+
             return Response(response_data)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
