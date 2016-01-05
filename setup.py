@@ -20,7 +20,7 @@ def get_version(package):
 
 name = 'djangorestframework-jwt-courb'
 version = get_version('rest_framework_jwt_courb')
-package = 'rest_framework_jwt'
+package = 'rest_framework_jwt_courb'
 description = 'JSON Web Token based authentication for Django REST framework'
 url = 'https://github.com/coUrbanize/django-rest-framework-jwt-courb'
 author = 'Jose Padilla'
