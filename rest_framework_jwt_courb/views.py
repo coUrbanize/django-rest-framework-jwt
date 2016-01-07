@@ -1,3 +1,5 @@
+from django.contrib.auth import login
+
 from rest_framework_3.views import APIView
 from rest_framework_3 import status
 from rest_framework_3.response import Response
@@ -63,6 +65,9 @@ class JSONWebTokenAPIView(APIView):
 
             # extend response to include user ID
             response_data['user_id'] = user.id
+
+            # login user
+            login(request, user)
 
             return Response(response_data)
 
