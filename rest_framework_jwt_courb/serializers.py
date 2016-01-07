@@ -51,6 +51,9 @@ class JSONWebTokenSerializer(Serializer):
 
         # get user (this is a little inefficient as User DB is being called twice)
         user = User.objects.filter(email=email).first()
+        if not user:
+            msg = _('Unable to login with provided credentials.')
+            raise serializers.ValidationError(msg)
 
         credentials = {
             self.username_field: user.username,
