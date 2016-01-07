@@ -32,9 +32,9 @@ from rest_framework.test import APIRequestFactory, APIClient
 from rest_framework.views import APIView
 
 from rest_framework_jwt import utils
-from rest_framework_jwt.compat import get_user_model
-from rest_framework_jwt.settings import api_settings, DEFAULTS
-from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+from rest_framework_jwt_courb.compat import get_user_model
+from rest_framework_jwt_courb.settings import api_settings, DEFAULTS
+from rest_framework_jwt_courb.authentication import JSONWebTokenAuthentication
 
 User = get_user_model()
 

@@ -6,8 +6,8 @@ import jwt.exceptions
 from django.test import TestCase
 
 from rest_framework_jwt import utils
-from rest_framework_jwt.compat import get_user_model
-from rest_framework_jwt.settings import api_settings, DEFAULTS
+from rest_framework_jwt_courb.compat import get_user_model
+from rest_framework_jwt_courb.settings import api_settings, DEFAULTS
 
 User = get_user_model()
 

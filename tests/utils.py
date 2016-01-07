@@ -1,4 +1,4 @@
-from rest_framework_jwt.compat import get_username
+from rest_framework_jwt_courb.compat import get_username
 
 
 def jwt_response_payload_handler(token, user=None, request=None):

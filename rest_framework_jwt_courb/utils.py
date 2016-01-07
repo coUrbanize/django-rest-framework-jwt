@@ -3,8 +3,8 @@ import warnings
 from calendar import timegm
 from datetime import datetime
 
-from rest_framework_jwt.compat import get_username, get_username_field
-from rest_framework_jwt.settings import api_settings
+from rest_framework_jwt_courb.compat import get_username, get_username_field
+from rest_framework_jwt_courb.settings import api_settings
 
 
 def jwt_payload_handler(user):

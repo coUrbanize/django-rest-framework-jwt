@@ -8,8 +8,8 @@ from django.utils.translation import ugettext as _
 from rest_framework_3 import serializers
 from .compat import Serializer
 
-from rest_framework_jwt.settings import api_settings
-from rest_framework_jwt.compat import (
+from rest_framework_jwt_courb.settings import api_settings
+from rest_framework_jwt_courb.compat import (
     get_user_model, get_username_field, PasswordField
 )
 

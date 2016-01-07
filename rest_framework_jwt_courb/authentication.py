@@ -6,8 +6,8 @@ from rest_framework_3.authentication import (
     BaseAuthentication, get_authorization_header
 )
 
-from rest_framework_jwt.compat import get_user_model
-from rest_framework_jwt.settings import api_settings
+from rest_framework_jwt_courb.compat import get_user_model
+from rest_framework_jwt_courb.settings import api_settings
 
 
 jwt_decode_handler = api_settings.JWT_DECODE_HANDLER
